@@ -7,8 +7,8 @@ form {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   background-color: grey;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
@@ -19,6 +19,12 @@ form {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+
+    textArea {
+      resize: none;
+      height: 150px;
+      width: 300px;
+    }
 
     &.methods {
       span {
