@@ -1,11 +1,24 @@
 section {
-    display: flex;
-    justify-content: center;
-    color: black;
-    
-    background-color: white;
-    align-items: center;
-    border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-wrap: wrap;
+  background-color: white;
+  align-items: center;
+  border: 10px solid black;
+  max-height: 30vh;
+  overflow: auto; /* Add this line to enable scrolling */
 
-    // width: 300px;
+  // width: 300px;
+  
+  pre {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+
+
+
+
+
