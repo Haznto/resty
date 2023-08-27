@@ -1,24 +1,70 @@
 section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
   color: black;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   background-color: white;
   align-items: center;
-  border: 10px solid black;
+  border: 10px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   max-height: 30vh;
-  overflow: auto; /* Add this line to enable scrolling */
+  overflow: auto;
+  /* Add this line to enable scrolling */
 
   // width: 300px;
-  
+
   pre {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    color: white;
+    font-style: italic;
+    width: 100%;
+    background-color: #272822;
+    margin: 0;
+
+    span {
+      font-size: x-large;
+    }
   }
 }
 
+.results-body {
+  display: flex;
+  flex-direction: column;
 
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
+    button {
+      width: 300px;
+      // margin: 0 auto;
+      height: 50px;
 
+      &:hover {
+        background-color: black;
+        transition: 0.5s ease-in-out;
+        color: white;
+      }
 
+      &:not(:hover) {
+        background-color: white;
+        transition: 0.5s ease-in-out;
+        color: black;
+      }
+    }
+  }
 
+  section {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
