@@ -39,6 +39,17 @@ it("test if elements exist", async () => {
 
 
 });
+it("test if history exist", async () => {
+  render(<App />);
+  const historybtn = screen.getByTestId("history-btn");
+  fireEvent.click(historybtn)
+  const history = screen.getByTestId("history-test");
+
+  expect(history).toBeInTheDocument()
+
+
+
+});
 describe('Footer Component', () => {
   it('should render the footer text', () => {
     render(<App />);

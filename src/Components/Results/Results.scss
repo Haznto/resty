@@ -1,4 +1,4 @@
-section {
+.result-sec {
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -9,13 +9,16 @@ section {
   border: 10px solid grey;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  max-height: 30vh;
+  max-height: 60vh;
+  // height: 100%;
   overflow: auto;
+
   /* Add this line to enable scrolling */
 
   // width: 300px;
 
   pre {
+
     // display: flex;
     // flex-wrap: wrap;
     color: white;
@@ -33,6 +36,7 @@ section {
 .results-body {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   div {
     display: flex;
@@ -63,7 +67,7 @@ section {
     }
   }
 
-  section {
+  .result-sec {
     width: 65%;
     margin: 0 auto;
   }

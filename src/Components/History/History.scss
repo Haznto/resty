@@ -1,0 +1,24 @@
+.historySection {
+    height: 100%;
+    overflow: auto;
+    background-color: #272822;
+
+    div {
+        flex-direction: column;
+        border: white solid 2px;
+
+        hr {
+            color: white;
+        }
+    }
+
+
+    p {
+        color: white;
+        font-style: italic;
+        width: 100%;
+        background-color: #272822;
+        margin: 0;
+        font-size: x-large;
+    }
+}
